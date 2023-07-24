@@ -1,0 +1,33 @@
+img {
+    height: 600px;
+
+}
+
+#container {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+}
+
+#imgcard {
+    height: 374px;
+    width: 374px;
+}
+
+#cardcontainer {
+    width: 1200px;
+    margin-top: 20px;
+    margin: 0 auto;
+
+    cursor: pointer;
+}

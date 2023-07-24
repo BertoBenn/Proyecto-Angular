@@ -1,1 +1,59 @@
-<h1>STORE: Ejemplo completo CRUD con Angular y Java Spring</h1>
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="container">
+        <h1 class="titulo">NUEVA TEMPORADA</h1>
+        <img src="../../assets/images/carousel1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item" id="container">
+        <h1 class="titulo">ESTILO CHIC</h1>
+        <img src="../../assets/images/carousel2.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item" id="container">
+        <h1 class="titulo">DESCUENTOS</h1>
+        <img src="../../assets/images/carousel0.jpg" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4" id="cardcontainer">
+  <div class="col">
+    <div class="card h-100" [routerLink]="['categories']">
+      <img src="../../assets/images/card1.jpg" class="card-img-top" id="imgcard">
+      <div class="card-body">
+        <h5 class="card-title">Categorías</h5>
+        <p class="card-text">Visita nuestras categorías y explora nuestro catálogo para descubir cual es tu estilo</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100" [routerLink]="['articulos']">
+      <img src="../../assets/images/card2.jpg" class="card-img-top" id="imgcard">
+      <div class="card-body">
+        <h5 class="card-title">Artículos nuevos</h5>
+        <p class="card-text">Explora todos los articulos subidos por la comunidad y enterate de las nuevas tendencias</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100" [routerLink]="['articulos']">
+      <img src="../../assets/images/card3.jpg" class="card-img-top" id="imgcard">
+      <div class="card-body">
+        <h5 class="card-title">Descuentos de temporada</h5>
+        <p class="card-text">Disfruta de los descuentos para la nueva temporada de verano y disfruta tomando el sol</p>
+      </div>
+    </div>
+  </div>
+</div>
